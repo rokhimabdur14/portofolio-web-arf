@@ -11,7 +11,7 @@ const Portfolio = () => {
       id: 1,
       title: 'Wedding Photography',
       category: 'photography',
-      image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070'
+      image: 'https://images.unsplash.com/photo-1583521214690-73421a1829a9?q=80&w=2070'
     },
     {
       id: 2,
@@ -23,13 +23,13 @@ const Portfolio = () => {
       id: 3,
       title: 'Portrait Session',
       category: 'photography',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2064'
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2064'
     },
     {
       id: 4,
       title: 'Event Coverage',
       category: 'videography',
-      image: 'https://images.unsplash.com/photo-1555992336-fb0d29498b13?q=80&w=2069'
+      image: 'https://images.unsplash.com/photo-1551431009-a802eeec77b1?q=80&w=2069'
     },
     {
       id: 5,
@@ -41,7 +41,7 @@ const Portfolio = () => {
       id: 6,
       title: 'Cultural Video',
       category: 'videography',
-      image: 'https://images.unsplash.com/photo-1552082508-0b3f822e7fc5?q=80&w=2070'
+      image: 'https://images.unsplash.com/photo-1551446591-142875a901a1?q=80&w=2070'
     },
     {
       id: 7,

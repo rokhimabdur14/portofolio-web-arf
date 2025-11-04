@@ -37,7 +37,7 @@ const Contact = () => {
     <div className="contact">
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1552082508-0b3f822e7fc5?q=80&w=2074"
+        bgImage="https://images.unsplash.com/photo-1551446591-142875a901a1?q=80&w=2074"
         bgImageAlt="contact"
         strength={300}
       >

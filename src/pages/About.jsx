@@ -52,7 +52,7 @@ const About = () => {
             </div>
             <div className="about-image">
               <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2070"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2070"
                 alt="Abdur Rokhim Al Firdzos"
               />
             </div>

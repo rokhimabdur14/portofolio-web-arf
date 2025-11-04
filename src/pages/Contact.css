@@ -24,7 +24,7 @@
 
 .contact-hero p {
   font-size: 1.5rem;
-  color: #f39c12;
+  color: #14b8a6;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -81,7 +81,7 @@
 }
 
 .contact-item h3 {
-  color: #f39c12;
+  color: #14b8a6;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
@@ -94,7 +94,7 @@
 }
 
 .contact-item a:hover {
-  color: #f39c12;
+  color: #14b8a6;
 }
 
 .social-links h3 {
@@ -121,9 +121,9 @@
 }
 
 .social-icons a:hover {
-  background: #f39c12;
+  background: #14b8a6;
   color: white;
-  border-color: #f39c12;
+  border-color: #14b8a6;
   transform: translateY(-3px);
   box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
 }
@@ -172,7 +172,7 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #f39c12;
+  border-color: #14b8a6;
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.1);
 }
@@ -194,7 +194,7 @@
 .submit-button {
   width: 100%;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #f39c12, #e67e22);
+  background: linear-gradient(135deg, #14b8a6, #eab308);
   color: white;
   border: none;
   border-radius: 50px;

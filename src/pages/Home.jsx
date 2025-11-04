@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section with Strong Parallax */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=2070"
         bgImageAlt="photography"
         strength={600}
       >
@@ -49,7 +49,7 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               whileHover={{ scale: 1.05, y: -10 }}
             >
-              <div className="service-icon">📷</div>
+              <div className="service-icon">●</div>
               <h3>Photography</h3>
               <p>Professional photography for events, portraits, and commercial projects</p>
             </motion.div>
@@ -62,7 +62,7 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               whileHover={{ scale: 1.05, y: -10 }}
             >
-              <div className="service-icon">🎥</div>
+              <div className="service-icon">▸</div>
               <h3>Videography</h3>
               <p>Cinematic videography and video production services</p>
             </motion.div>
@@ -75,7 +75,7 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               whileHover={{ scale: 1.05, y: -10 }}
             >
-              <div className="service-icon">🤖</div>
+              <div className="service-icon">✦</div>
               <h3>AI Enhancement</h3>
               <p>Utilizing latest AI technology for photo and video enhancement</p>
             </motion.div>
@@ -86,7 +86,7 @@ const Home = () => {
       {/* Parallax Section 2 - Medium Speed */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2070"
         bgImageAlt="landscape"
         strength={300}
       >
@@ -161,7 +161,7 @@ const Home = () => {
       {/* Parallax Section 3 - Slow Speed for Depth */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1583521214690-73421a1829a9?q=80&w=2070"
         bgImageAlt="wedding"
         strength={200}
       >
@@ -214,7 +214,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               whileHover={{ scale: 1.03 }}
             >
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800" alt="Portrait" />
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800" alt="Portrait" />
               <div className="featured-overlay">
                 <h3>Portrait Sessions</h3>
                 <p>Capturing personality and essence</p>
@@ -241,7 +241,7 @@ const Home = () => {
       {/* Parallax Section 4 - Fast Speed */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1555992336-fb0d29498b13?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1551431009-a802eeec77b1?q=80&w=2070"
         bgImageAlt="videography"
         strength={500}
       >
@@ -279,7 +279,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <div className="why-icon">⚡</div>
+              <div className="why-icon">◉</div>
               <h3>Fast Turnaround</h3>
               <p>Quick delivery without compromising quality</p>
             </motion.div>
@@ -290,7 +290,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="why-icon">🎨</div>
+              <div className="why-icon">✦</div>
               <h3>Creative Vision</h3>
               <p>Unique artistic approach to every project</p>
             </motion.div>
@@ -301,7 +301,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <div className="why-icon">💎</div>
+              <div className="why-icon">◆</div>
               <h3>Premium Quality</h3>
               <p>Top-tier equipment and editing software</p>
             </motion.div>
@@ -312,7 +312,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <div className="why-icon">🤝</div>
+              <div className="why-icon">✓</div>
               <h3>Professional Service</h3>
               <p>Reliable, friendly, and easy to work with</p>
             </motion.div>
@@ -323,7 +323,7 @@ const Home = () => {
       {/* Parallax Section 5 - Ultra Slow for Dramatic Effect */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1552082508-0b3f822e7fc5?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1551446591-142875a901a1?q=80&w=2070"
         bgImageAlt="culture"
         strength={150}
       >

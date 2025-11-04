@@ -112,7 +112,7 @@ const PriceList = () => {
     <div className="pricelist">
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1583521214690-73421a1829a9?q=80&w=2070"
         bgImageAlt="pricing"
         strength={300}
       >

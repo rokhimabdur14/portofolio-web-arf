@@ -32,7 +32,7 @@
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 300;
-  color: #f39c12;
+  color: #14b8a6;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
@@ -48,7 +48,7 @@
 .cta-button {
   display: inline-block;
   padding: 1.2rem 3rem;
-  background: linear-gradient(135deg, #f39c12, #e67e22);
+  background: linear-gradient(135deg, #14b8a6, #eab308);
   color: white;
   text-decoration: none;
   border-radius: 50px;
@@ -80,7 +80,7 @@
 
 .cta-button-secondary:hover {
   background: rgba(243, 156, 18, 0.2);
-  border-color: #f39c12;
+  border-color: #14b8a6;
   transform: translateY(-3px);
 }
 
@@ -94,11 +94,11 @@
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  border: 2px solid #f39c12;
+  border: 2px solid #14b8a6;
 }
 
 .cta-button-outline:hover {
-  background: #f39c12;
+  background: #14b8a6;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(243, 156, 18, 0.5);
 }
@@ -128,7 +128,7 @@
   display: block;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, transparent, #f39c12, transparent);
+  background: linear-gradient(90deg, transparent, #14b8a6, transparent);
   margin: 1rem auto 0;
 }
 
@@ -152,7 +152,7 @@
 
 .service-card:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: #f39c12;
+  border-color: #14b8a6;
   box-shadow: 0 12px 40px rgba(243, 156, 18, 0.3);
 }
 
@@ -164,7 +164,7 @@
 
 .service-card h3 {
   font-size: 1.6rem;
-  color: #f39c12;
+  color: #14b8a6;
   margin-bottom: 1rem;
 }
 
@@ -225,7 +225,7 @@
   max-width: 700px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
-  border-left: 4px solid #f39c12;
+  border-left: 4px solid #14b8a6;
   border-radius: 10px;
 }
 
@@ -249,7 +249,7 @@
 .parallax-content-large p,
 .parallax-content-centered p {
   font-size: 1.5rem;
-  color: #f39c12;
+  color: #14b8a6;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
   margin-bottom: 2rem;
 }
@@ -283,7 +283,7 @@
 
 .stat-item h3 {
   font-size: 3.5rem;
-  color: #f39c12;
+  color: #14b8a6;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -346,7 +346,7 @@
 }
 
 .featured-overlay p {
-  color: #f39c12;
+  color: #14b8a6;
   font-size: 1rem;
 }
 
@@ -387,7 +387,7 @@
 
 .why-item h3 {
   font-size: 1.5rem;
-  color: #f39c12;
+  color: #14b8a6;
   margin-bottom: 1rem;
 }
 
@@ -501,7 +501,7 @@
   .parallax-content-large {
     text-align: center;
     border-left: none;
-    border-top: 4px solid #f39c12;
+    border-top: 4px solid #14b8a6;
   }
 
   .stat-item h3 {

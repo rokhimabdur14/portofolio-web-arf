@@ -24,7 +24,7 @@
 
 .pricelist-hero p {
   font-size: 1.5rem;
-  color: #f39c12;
+  color: #14b8a6;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -59,7 +59,7 @@
 
 .package-category {
   font-size: 2rem;
-  color: #f39c12;
+  color: #14b8a6;
   margin: 3rem 0 2rem;
   text-align: center;
 }
@@ -90,7 +90,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, transparent, #f39c12, transparent);
+  background: linear-gradient(90deg, transparent, #14b8a6, transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -101,13 +101,13 @@
 
 .package-card:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: #f39c12;
+  border-color: #14b8a6;
   transform: translateY(-5px);
   box-shadow: 0 10px 40px rgba(243, 156, 18, 0.3);
 }
 
 .package-card.popular {
-  border-color: #f39c12;
+  border-color: #14b8a6;
   background: rgba(243, 156, 18, 0.1);
 }
 
@@ -115,7 +115,7 @@
   position: absolute;
   top: 20px;
   right: -35px;
-  background: #f39c12;
+  background: #14b8a6;
   color: white;
   padding: 0.4rem 3rem;
   font-size: 0.85rem;
@@ -126,7 +126,7 @@
 
 .package-card h3 {
   font-size: 1.8rem;
-  color: #f39c12;
+  color: #14b8a6;
   margin-bottom: 1rem;
 }
 
@@ -167,7 +167,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #f39c12;
+  color: #14b8a6;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -176,7 +176,7 @@
   display: inline-block;
   width: 100%;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #f39c12, #e67e22);
+  background: linear-gradient(135deg, #14b8a6, #eab308);
   color: white;
   text-decoration: none;
   border-radius: 50px;
@@ -202,7 +202,7 @@
 
 .pricing-note h3 {
   font-size: 1.8rem;
-  color: #f39c12;
+  color: #14b8a6;
   margin-bottom: 1rem;
 }
 
