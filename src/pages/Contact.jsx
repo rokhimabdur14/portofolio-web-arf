@@ -83,7 +83,7 @@ const Contact = () => {
                   <div className="contact-icon">📱</div>
                   <div>
                     <h3>Phone</h3>
-                    <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                    <a href="tel:+6285876971629">+62 858-7697-1629</a>
                   </div>
                 </div>
 
@@ -91,7 +91,7 @@ const Contact = () => {
                   <div className="contact-icon">📍</div>
                   <div>
                     <h3>Location</h3>
-                    <p>Indonesia</p>
+                    <p>IKN, Indonesia</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ const Contact = () => {
               <div className="social-links">
                 <h3>Follow Me</h3>
                 <div className="social-icons">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://instagram.com/abdurrokhimalf" target="_blank" rel="noopener noreferrer">
                     Instagram
                   </a>
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

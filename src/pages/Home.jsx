@@ -20,9 +20,9 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="hero-title">Abdur Rokhim Al Firdzos</h1>
-            <p className="hero-subtitle">Freelance Photography & Videography</p>
-            <p className="hero-tagline">Capturing moments, Creating memories</p>
+            <h1 className="hero-title">Frame Vision</h1>
+            <p className="hero-subtitle">Abdur Rokhim Al Firdzos</p>
+            <p className="hero-tagline">Freelance Photography & Videography | Based in IKN, Indonesia</p>
             <Link to="/portfolio" className="cta-button">
               View Portfolio
             </Link>

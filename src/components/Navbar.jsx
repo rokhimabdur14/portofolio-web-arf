@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          ARF Photography
+          Frame Vision
         </Link>
 
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
