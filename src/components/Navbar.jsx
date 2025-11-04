@@ -26,7 +26,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link to="/portfolio" className={`nav-link ${isActive('/portfolio')}`} onClick={toggleMenu}>
-            Portfolio
+            Portofolio
           </Link>
           <Link to="/about" className={`nav-link ${isActive('/about')}`} onClick={toggleMenu}>
             About

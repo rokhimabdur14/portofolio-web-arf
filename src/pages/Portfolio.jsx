@@ -76,7 +76,7 @@ const Portfolio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1>Portfolio</h1>
+            <h1>Portofolio</h1>
             <p>My Recent Work</p>
           </motion.div>
         </div>

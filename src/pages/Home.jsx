@@ -24,7 +24,7 @@ const Home = () => {
             <p className="hero-subtitle">Abdur Rokhim Al Firdzos</p>
             <p className="hero-tagline">Freelance Photography & Videography | Based in IKN, Indonesia</p>
             <Link to="/portfolio" className="cta-button">
-              View Portfolio
+              Lihat Portofolio
             </Link>
           </motion.div>
         </div>
@@ -338,7 +338,7 @@ const Home = () => {
             <h2>Telling Your Story</h2>
             <p>Through the art of visual storytelling</p>
             <Link to="/portfolio" className="cta-button-secondary">
-              Explore Gallery
+              Jelajahi Galeri
             </Link>
           </motion.div>
         </div>
