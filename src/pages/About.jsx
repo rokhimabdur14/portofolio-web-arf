@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1583521214690-73421a1829a9?q=80&w=2070"
         bgImageAlt="about"
         strength={300}
       >
@@ -52,7 +52,7 @@ const About = () => {
             </div>
             <div className="about-image">
               <img
-                src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=2070"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2070"
                 alt="Abdur Rokhim Al Firdzos"
               />
             </div>

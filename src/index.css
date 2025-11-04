@@ -50,6 +50,14 @@ button {
 img {
   max-width: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Fix parallax images on mobile */
+.react-parallax-bgimage {
+  object-fit: cover !important;
+  object-position: center !important;
 }
 
 /* Scrollbar Styling */

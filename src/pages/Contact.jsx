@@ -37,7 +37,7 @@ const Contact = () => {
     <div className="contact">
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074"
+        bgImage="https://images.unsplash.com/photo-1552082508-0b3f822e7fc5?q=80&w=2074"
         bgImageAlt="contact"
         strength={300}
       >
@@ -75,7 +75,7 @@ const Contact = () => {
                   <div className="contact-icon">📧</div>
                   <div>
                     <h3>Email</h3>
-                    <a href="mailto:abdur.firdzos@example.com">abdur.firdzos@example.com</a>
+                    <a href="mailto:rokhimabdur14@gmail.com">rokhimabdur14@gmail.com</a>
                   </div>
                 </div>
 

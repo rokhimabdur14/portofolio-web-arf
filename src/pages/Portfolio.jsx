@@ -11,49 +11,49 @@ const Portfolio = () => {
       id: 1,
       title: 'Wedding Photography',
       category: 'photography',
-      image: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070'
+      image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070'
     },
     {
       id: 2,
       title: 'Corporate Video',
       category: 'videography',
-      image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071'
+      image: 'https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2070'
     },
     {
       id: 3,
       title: 'Portrait Session',
       category: 'photography',
-      image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2064'
+      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2064'
     },
     {
       id: 4,
       title: 'Event Coverage',
       category: 'videography',
-      image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069'
+      image: 'https://images.unsplash.com/photo-1555992336-fb0d29498b13?q=80&w=2069'
     },
     {
       id: 5,
-      title: 'Product Photography',
+      title: 'Landscape Photography',
       category: 'photography',
-      image: 'https://images.unsplash.com/photo-1560393464-5c69a73c5770?q=80&w=2065'
+      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070'
     },
     {
       id: 6,
-      title: 'Music Video',
+      title: 'Cultural Video',
       category: 'videography',
-      image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070'
+      image: 'https://images.unsplash.com/photo-1552082508-0b3f822e7fc5?q=80&w=2070'
     },
     {
       id: 7,
-      title: 'Fashion Photography',
+      title: 'Street Photography',
       category: 'photography',
-      image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=2076'
+      image: 'https://images.unsplash.com/photo-1583521214690-73421a1829a9?q=80&w=2076'
     },
     {
       id: 8,
-      title: 'Documentary Film',
+      title: 'Travel Film',
       category: 'videography',
-      image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2059'
+      image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2059'
     }
   ];
 
@@ -65,7 +65,7 @@ const Portfolio = () => {
     <div className="portfolio">
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070"
         bgImageAlt="portfolio"
         strength={300}
       >

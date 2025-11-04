@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071"
+        bgImage="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2070"
         bgImageAlt="photography"
         strength={500}
       >
@@ -77,7 +77,7 @@ const Home = () => {
       {/* Parallax Section 2 */}
       <Parallax
         blur={0}
-        bgImage="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070"
+        bgImage="https://images.unsplash.com/photo-1555992336-fb0d29498b13?q=80&w=2070"
         bgImageAlt="videography"
         strength={400}
       >
