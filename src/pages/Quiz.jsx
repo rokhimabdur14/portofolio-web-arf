@@ -1,6 +1,40 @@
 import { useState } from 'react';
 import './Quiz.css';
 
+// Background images - Indonesia landscape photography
+const backgroundImages = [
+  'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1920&q=80', // Bali rice terrace
+  'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Bali temple
+  'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1920&q=80', // Mount Bromo
+  'https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?w=1920&q=80', // Komodo Island
+  'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=1920&q=80', // Raja Ampat
+  'https://images.unsplash.com/photo-1502933691298-84fc14542831?w=1920&q=80', // Bali beach
+  'https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=1920&q=80', // Lombok waterfall
+  'https://images.unsplash.com/photo-1604999333679-b86d54738315?w=1920&q=80', // Java mountains
+  'https://images.unsplash.com/photo-1573790387438-4da905039392?w=1920&q=80', // Nusa Penida
+  'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&q=80', // Labuan Bajo
+  'https://images.unsplash.com/photo-1532186651327-6ac23687d189?w=1920&q=80', // Bali sunrise
+  'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80', // Borobudur
+  'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=1920&q=80', // Tropical beach
+  'https://images.unsplash.com/photo-1548263594-a71ea65a8598?w=1920&q=80', // Rice fields
+  'https://images.unsplash.com/photo-1559628376-f23d5a9968ce?w=1920&q=80', // Mountain view
+  'https://images.unsplash.com/photo-1520208422220-d12a3c588e6c?w=1920&q=80', // Gili Islands
+  'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Temple landscape
+  'https://images.unsplash.com/photo-1559628376-f23d5a9968ce?w=1920&q=80', // Volcano
+  'https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?w=1920&q=80', // Jungle
+  'https://images.unsplash.com/photo-1601815869605-a4df1f6d90e3?w=1920&q=80', // Indonesian coast
+  'https://images.unsplash.com/photo-1587897773780-fe72528d5081?w=1920&q=80', // Traditional house
+  'https://images.unsplash.com/photo-1559628376-f23d5a9968ce?w=1920&q=80', // Mountain peak
+  'https://images.unsplash.com/photo-1605649487212-47a384e8d3fd?w=1920&q=80', // Green valley
+  'https://images.unsplash.com/photo-1570789210967-2cac24afeb00?w=1920&q=80', // Waterfall scene
+  'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80', // Sacred temple
+  'https://images.unsplash.com/photo-1604999333679-b86d54738315?w=1920&q=80', // Highland
+  'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1920&q=80', // Volcanic landscape
+  'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80', // Historical site
+  'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1920&q=80', // Terraced fields
+  'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=1920&q=80', // Island paradise
+];
+
 const quizData = [
   // DASAR FOTOGRAFI
   {
@@ -388,8 +422,17 @@ const Quiz = () => {
   };
 
   if (!quizStarted) {
+    const randomBg = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
     return (
-      <div className="quiz-container">
+      <div
+        className="quiz-container"
+        style={{
+          backgroundImage: `url(${randomBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="quiz-start-screen">
           <div className="quiz-icon">📸</div>
           <h1>Kuis Fotografi & Videografi</h1>
@@ -424,8 +467,17 @@ const Quiz = () => {
 
   if (showScore) {
     const percentage = (score / quizData.length) * 100;
+    const randomBg = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
     return (
-      <div className="quiz-container">
+      <div
+        className="quiz-container"
+        style={{
+          backgroundImage: `url(${randomBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="quiz-result">
           <div className="result-icon">
             {percentage >= 80 ? '🏆' : percentage >= 60 ? '🎉' : '📚'}
@@ -457,7 +509,15 @@ const Quiz = () => {
   }
 
   return (
-    <div className="quiz-container">
+    <div
+      className="quiz-container"
+      style={{
+        backgroundImage: `url(${backgroundImages[currentQuestion % backgroundImages.length]})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <div className="quiz-content">
         <div className="quiz-header">
           <div className="question-count">
