@@ -34,6 +34,9 @@ const Navbar = () => {
           <Link to="/pricelist" className={`nav-link ${isActive('/pricelist')}`} onClick={toggleMenu}>
             Price List
           </Link>
+          <Link to="/belajar" className={`nav-link ${isActive('/belajar')}`} onClick={toggleMenu}>
+            Belajar
+          </Link>
           <Link to="/quiz" className={`nav-link ${isActive('/quiz')}`} onClick={toggleMenu}>
             Quiz
           </Link>

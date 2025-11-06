@@ -6,6 +6,7 @@ import About from './pages/About';
 import PriceList from './pages/PriceList';
 import Contact from './pages/Contact';
 import Quiz from './pages/Quiz';
+import Learn from './pages/Learn';
 import './App.css';
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/pricelist" element={<PriceList />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/belajar" element={<Learn />} />
           <Route path="/quiz" element={<Quiz />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
