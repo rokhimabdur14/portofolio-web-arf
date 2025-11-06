@@ -28,9 +28,9 @@ const Learn = () => {
               <p>Langsung bisa dipraktikkan dengan kamera Anda</p>
             </div>
             <div className="intro-card">
-              <span className="intro-icon">📊</span>
-              <h3>Ilustrasi Jelas</h3>
-              <p>Dilengkapi gambar dan diagram untuk pemahaman lebih baik</p>
+              <span className="intro-icon">📖</span>
+              <h3>Materi Lengkap</h3>
+              <p>Dari basic sampai advanced techniques</p>
             </div>
             <div className="intro-card">
               <span className="intro-icon">🚀</span>
@@ -42,15 +42,26 @@ const Learn = () => {
           <div className="learning-path">
             <h3>🗺️ Alur Pembelajaran</h3>
             <div className="path-steps">
-              <div className="path-step">1️⃣ Dasar Fotografi</div>
-              <div className="path-arrow">→</div>
-              <div className="path-step">2️⃣ Komposisi & Teknik</div>
-              <div className="path-arrow">→</div>
-              <div className="path-step">3️⃣ Lighting</div>
-              <div className="path-arrow">→</div>
-              <div className="path-step">4️⃣ Videografi</div>
-              <div className="path-arrow">→</div>
-              <div className="path-step">5️⃣ Editing</div>
+              <div className="path-step">
+                <span className="step-number">1</span>
+                <span className="step-label">Dasar Fotografi</span>
+              </div>
+              <div className="path-step">
+                <span className="step-number">2</span>
+                <span className="step-label">Komposisi & Teknik</span>
+              </div>
+              <div className="path-step">
+                <span className="step-number">3</span>
+                <span className="step-label">Lighting</span>
+              </div>
+              <div className="path-step">
+                <span className="step-number">4</span>
+                <span className="step-label">Videografi</span>
+              </div>
+              <div className="path-step">
+                <span className="step-number">5</span>
+                <span className="step-label">Editing</span>
+              </div>
             </div>
           </div>
 
@@ -72,29 +83,9 @@ const Learn = () => {
             <strong> ISO, Aperture (Bukaan), dan Shutter Speed</strong>.
           </p>
 
-          <div className="concept-diagram">
-            <h3>📊 Diagram Exposure Triangle</h3>
-            <div className="triangle-visual">
-              <pre className="ascii-art">
-{`
-                    EXPOSURE
-                       🔺
-                      /  \\
-                     /    \\
-                    /      \\
-                   /  FOTO  \\
-                  /   YANG   \\
-                 /   TEPAT   \\
-                /              \\
-               /________________\\
-
-         ISO               APERTURE
-          📈                   🔵
-              SHUTTER SPEED
-                    ⏱️
-`}
-              </pre>
-            </div>
+          <div className="triangle-concept">
+            <h3>🔺 Tiga Pilar Eksposur</h3>
+            <p>Ketiga elemen ini saling berhubungan dan mempengaruhi hasil foto Anda. Ubah satu, dan yang lain harus disesuaikan untuk mendapatkan eksposur yang tepat.</p>
           </div>
 
           <div className="element-card">
@@ -114,15 +105,15 @@ const Learn = () => {
             <div className="comparison-box">
               <div className="compare-item">
                 <h4>✅ ISO Rendah (100-400)</h4>
-                <p>+ Foto lebih tajam dan bersih</p>
-                <p>+ Minim noise/grain</p>
-                <p>- Butuh cahaya lebih banyak</p>
+                <p className="pro">+ Foto lebih tajam dan bersih</p>
+                <p className="pro">+ Minim noise/grain</p>
+                <p className="con">- Butuh cahaya lebih banyak</p>
               </div>
               <div className="compare-item">
                 <h4>⚠️ ISO Tinggi (1600+)</h4>
-                <p>+ Bisa foto di tempat gelap</p>
-                <p>+ Shutter speed lebih cepat</p>
-                <p>- Foto ada noise/grain</p>
+                <p className="pro">+ Bisa foto di tempat gelap</p>
+                <p className="pro">+ Shutter speed lebih cepat</p>
+                <p className="con">- Foto ada noise/grain</p>
               </div>
             </div>
 
@@ -139,37 +130,36 @@ const Learn = () => {
               <h4>Simbol: f/number (f/1.8, f/2.8, f/5.6, dst)</h4>
               <p className="highlight">⚠️ Angka KECIL = Bukaan BESAR | Angka BESAR = Bukaan KECIL</p>
 
-              <div className="aperture-visual">
-                <pre>
-{`
-f/1.8        f/4          f/8         f/16
-(Besar)    (Sedang)    (Sedang)    (Kecil)
-  ●●●●       ●●●         ●●          ●
-  ●●●●       ●●●         ●●          ●
-  ●●●●       ●●●         ●●
-  ●●●●
-
-Cahaya:    Banyak      Sedang      Sedang      Sedikit
-Blur BG:   Kuat        Sedang      Kurang      Minim
-`}
-                </pre>
+              <div className="aperture-range">
+                <div className="aperture-item">
+                  <strong>f/1.4 - f/2.8</strong>
+                  <p>Bukaan Besar • Cahaya Banyak • Blur BG Kuat</p>
+                </div>
+                <div className="aperture-item">
+                  <strong>f/4 - f/5.6</strong>
+                  <p>Bukaan Sedang • Cahaya Cukup • Blur BG Sedang</p>
+                </div>
+                <div className="aperture-item">
+                  <strong>f/8 - f/16</strong>
+                  <p>Bukaan Kecil • Cahaya Sedikit • Semua Tajam</p>
+                </div>
               </div>
             </div>
 
             <div className="comparison-box">
               <div className="compare-item">
                 <h4>🔓 Aperture Besar (f/1.4 - f/2.8)</h4>
-                <p>+ Background blur (Bokeh) 🌸</p>
-                <p>+ Bagus untuk portrait</p>
-                <p>+ Low light friendly</p>
-                <p>- Depth of Field sempit</p>
+                <p className="pro">+ Background blur (Bokeh) 🌸</p>
+                <p className="pro">+ Bagus untuk portrait</p>
+                <p className="pro">+ Low light friendly</p>
+                <p className="con">- Depth of Field sempit</p>
               </div>
               <div className="compare-item">
                 <h4>🔒 Aperture Kecil (f/8 - f/22)</h4>
-                <p>+ Semua tajam (landscape) 🏔️</p>
-                <p>+ Depth of Field lebar</p>
-                <p>+ Detail maksimal</p>
-                <p>- Butuh cahaya banyak</p>
+                <p className="pro">+ Semua tajam (landscape) 🏔️</p>
+                <p className="pro">+ Depth of Field lebar</p>
+                <p className="pro">+ Detail maksimal</p>
+                <p className="con">- Butuh cahaya banyak</p>
               </div>
             </div>
 
@@ -185,39 +175,40 @@ Blur BG:   Kuat        Sedang      Kurang      Minim
             <div className="info-box">
               <h4>Format: 1/1000s, 1/250s, 1/60s, 1"s, 5"s</h4>
 
-              <div className="shutter-visual">
-                <pre>
-{`
-CEPAT                              LAMBAT
-←─────────────────────────────────────→
-
-1/4000s   1/1000s   1/250s   1/60s   1/15s   1"    5"
-
-🏃💨      🚗       🚶       🧍      🌊     💫    ⭐
-Motion    Action    Normal   Static  Water  Light  Star
-Freeze    Sports    Walk     Still   Blur   Trail  Trail
-
-Cahaya:  Sedikit ←───────────────────→ Banyak
-Motion:  Freeze  ←───────────────────→ Blur
-`}
-                </pre>
+              <div className="shutter-range">
+                <div className="shutter-item">
+                  <strong>1/1000s - 1/4000s</strong>
+                  <p>Cepat • Freeze Motion • Sports</p>
+                </div>
+                <div className="shutter-item">
+                  <strong>1/125s - 1/250s</strong>
+                  <p>Normal • Everyday • Walk</p>
+                </div>
+                <div className="shutter-item">
+                  <strong>1/30s - 1"</strong>
+                  <p>Lambat • Motion Blur • Water</p>
+                </div>
+                <div className="shutter-item">
+                  <strong>5" - 30"</strong>
+                  <p>Sangat Lambat • Light Trails • Stars</p>
+                </div>
               </div>
             </div>
 
             <div className="comparison-box">
               <div className="compare-item">
                 <h4>⚡ Shutter Cepat (1/500s+)</h4>
-                <p>+ Freeze motion 🏃</p>
-                <p>+ Sports, action</p>
-                <p>+ No camera shake</p>
-                <p>- Butuh cahaya banyak</p>
+                <p className="pro">+ Freeze motion 🏃</p>
+                <p className="pro">+ Sports, action</p>
+                <p className="pro">+ No camera shake</p>
+                <p className="con">- Butuh cahaya banyak</p>
               </div>
               <div className="compare-item">
                 <h4>🐌 Shutter Lambat (1/30s-)</h4>
-                <p>+ Motion blur artistik 🌊</p>
-                <p>+ Light trails ✨</p>
-                <p>+ Low light</p>
-                <p>- Perlu tripod</p>
+                <p className="pro">+ Motion blur artistik 🌊</p>
+                <p className="pro">+ Light trails ✨</p>
+                <p className="pro">+ Low light</p>
+                <p className="con">- Perlu tripod</p>
               </div>
             </div>
 
@@ -253,27 +244,9 @@ Motion:  Freeze  ←───────────────────→
             <h3>📏 Rule of Thirds (Aturan Sepertiga)</h3>
             <p>Teknik komposisi paling populer dan mudah dipelajari!</p>
 
-            <div className="rule-diagram">
-              <pre className="ascii-art">
-{`
-┌─────────┬─────────┬─────────┐
-│         │         │         │
-│    ●    │         │    ●    │  ← Titik Power Points
-│         │         │         │
-├─────────┼─────────┼─────────┤
-│         │         │         │
-│         │  📷     │         │  ← Subjek di titik kuat
-│         │         │         │
-├─────────┼─────────┼─────────┤
-│         │         │         │
-│    ●    │         │    ●    │
-│         │         │         │
-└─────────┴─────────┴─────────┘
-
-Bagi frame 3x3, letakkan subjek di
-pertemuan garis atau sepanjang garis!
-`}
-              </pre>
+            <div className="concept-explain">
+              <h4>💡 Konsep:</h4>
+              <p>Bagi frame menjadi 9 bagian dengan 2 garis horizontal dan 2 garis vertikal. Letakkan subjek di pertemuan garis atau sepanjang garis untuk komposisi yang lebih menarik.</p>
             </div>
 
             <div className="tip-box">
@@ -294,23 +267,9 @@ pertemuan garis atau sepanjang garis!
             <h3>➡️ Leading Lines (Garis Pengarah)</h3>
             <p>Gunakan garis untuk mengarahkan mata viewer ke subjek utama.</p>
 
-            <div className="lines-visual">
-              <pre>
-{`
-Jalan/Road:              Sungai/River:
-
-    ║║                      ～～～～
-    ║║                     ～～～～
-    ║║ ↓                  ～～～～ ↓
-    ║📷                  ～～📷
-
-Rel/Railroad:            Tangga/Stairs:
-
-═════════                 ▓▓▓▓▓
-  ═════ ↓                  ▓▓▓ ↓
-    ══📷                    ▓📷
-`}
-              </pre>
+            <div className="concept-explain">
+              <h4>💡 Konsep:</h4>
+              <p>Cari garis natural dalam scene (jalan, sungai, rel, tangga) yang mengarah ke subjek utama untuk membuat foto lebih "3D" dan engaging.</p>
             </div>
 
             <div className="example-box">
@@ -329,20 +288,9 @@ Rel/Railroad:            Tangga/Stairs:
             <h3>🖼️ Framing (Pembingkaian)</h3>
             <p>Gunakan elemen natural sebagai "frame dalam frame".</p>
 
-            <div className="frame-visual">
-              <pre>
-{`
-┌─────────────────────────┐
-│  🌳              🌳     │  ← Pohon sebagai frame
-│    ╔═══════════╗       │
-│    ║           ║       │
-│    ║   🏰      ║       │  ← Subjek dalam frame
-│    ║           ║       │
-│    ╚═══════════╝       │
-│                        │
-└─────────────────────────┘
-`}
-              </pre>
+            <div className="concept-explain">
+              <h4>💡 Konsep:</h4>
+              <p>Cari objek di foreground yang bisa jadi frame untuk subjek utama, seperti pintu, jendela, atau cabang pohon.</p>
             </div>
 
             <div className="example-box">
@@ -360,19 +308,19 @@ Rel/Railroad:            Tangga/Stairs:
             <h3>⚖️ Symmetry & Patterns</h3>
             <p>Simetri dan pola menciptakan harmoni visual.</p>
 
-            <div className="symmetry-visual">
-              <pre>
-{`
-Symmetry:                 Pattern:
+            <div className="concept-explain">
+              <h4>💡 Konsep:</h4>
+              <p>Cari symmetry (mirror/refleksi) atau pattern (pengulangan objek) yang menciptakan visual balance dan menarik perhatian.</p>
+            </div>
 
-    🏛️                    🔴🔴🔴🔴
-   ╱│╲                   🔴🔴🔴🔴
-  ╱ │ ╲                  🔴🔴🔴🔴
- ╱  │  ╲                 🔴🔴🔴🔴
-────┼────  Mirror         Repetisi
-    │
-`}
-              </pre>
+            <div className="example-box">
+              <h4>Contoh:</h4>
+              <ul>
+                <li>🏛️ Bangunan dengan arsitektur simetris</li>
+                <li>🌊 Refleksi di air</li>
+                <li>🧱 Pola bata atau tile</li>
+                <li>🌻 Barisan bunga atau pohon</li>
+              </ul>
             </div>
           </div>
 
@@ -380,22 +328,18 @@ Symmetry:                 Pattern:
             <h3>↕️ Negative Space</h3>
             <p>Ruang kosong di sekitar subjek untuk emphasis.</p>
 
-            <div className="space-visual">
-              <pre>
-{`
-┌─────────────────────────┐
-│                         │
-│                         │
-│                      🧍 │  ← Subjek kecil
-│                         │
-│                         │  ← Banyak ruang kosong
-│                         │     (Negative Space)
-│                         │
-└─────────────────────────┘
+            <div className="concept-explain">
+              <h4>💡 Konsep:</h4>
+              <p>Biarkan banyak ruang kosong di sekitar subjek (kecil) untuk menciptakan feeling minimalis, lonely, atau dramatic.</p>
+            </div>
 
-Efek: Subjek terasa lonely, dramatic, minimal
-`}
-              </pre>
+            <div className="example-box">
+              <h4>Best untuk:</h4>
+              <ul>
+                <li>🧍 Portrait minimalis</li>
+                <li>🏔️ Landscape dengan subjek kecil</li>
+                <li>🎨 Fine art photography</li>
+              </ul>
             </div>
           </div>
 
@@ -426,41 +370,20 @@ Efek: Subjek terasa lonely, dramatic, minimal
           <div className="element-card">
             <h3>🌅 Golden Hour & Blue Hour</h3>
 
-            <div className="time-diagram">
-              <pre>
-{`
-TIMELINE CAHAYA NATURAL:
-
-04:00 ━━━ Blue Hour (Morning)
-05:00 ━━━ Golden Hour Start 🌅
-06:30 ━━━ Sunrise
-07:00 ━━━ Golden Hour End
-      ⋮
-12:00 ━━━ Harsh Light ☀️ (Hindari!)
-      ⋮
-17:00 ━━━ Golden Hour Start 🌇
-18:30 ━━━ Sunset
-19:00 ━━━ Golden Hour End
-19:30 ━━━ Blue Hour (Evening)
-20:00 ━━━ Night 🌙
-`}
-              </pre>
-            </div>
-
-            <div className="comparison-box">
-              <div className="compare-item">
+            <div className="time-guide">
+              <div className="time-item golden">
                 <h4>🌅 Golden Hour</h4>
-                <p>⏰ 1 jam setelah sunrise / sebelum sunset</p>
-                <p>✨ Cahaya warm, soft, keemasan</p>
-                <p>✅ Best untuk: Portrait, landscape</p>
-                <p>🎨 Warna: Orange, gold, warm tones</p>
+                <p><strong>Waktu:</strong> 1 jam setelah sunrise / sebelum sunset</p>
+                <p><strong>Karakteristik:</strong> Cahaya warm, soft, keemasan</p>
+                <p><strong>Best untuk:</strong> Portrait, landscape</p>
+                <p><strong>Warna:</strong> Orange, gold, warm tones</p>
               </div>
-              <div className="compare-item">
+              <div className="time-item blue">
                 <h4>🌌 Blue Hour</h4>
-                <p>⏰ Sebelum sunrise / setelah sunset</p>
-                <p>✨ Cahaya biru, dramatic, moody</p>
-                <p>✅ Best untuk: Cityscape, long exposure</p>
-                <p>🎨 Warna: Blue, purple, cool tones</p>
+                <p><strong>Waktu:</strong> Sebelum sunrise / setelah sunset</p>
+                <p><strong>Karakteristik:</strong> Cahaya biru, dramatic, moody</p>
+                <p><strong>Best untuk:</strong> Cityscape, long exposure</p>
+                <p><strong>Warna:</strong> Blue, purple, cool tones</p>
               </div>
             </div>
 
@@ -477,39 +400,27 @@ TIMELINE CAHAYA NATURAL:
           <div className="element-card">
             <h3>📍 Arah Cahaya</h3>
 
-            <div className="direction-visual">
-              <pre>
-{`
-1. FRONT LIGHT           2. SIDE LIGHT
-   (Cahaya dari depan)      (Cahaya dari samping)
-
-       ☀️                        ☀️
-       │                          ↓
-       ↓                    │→  👤
-      👤                    Depth & Texture!
-   Flat, no shadow
-
-
-3. BACK LIGHT            4. RIM LIGHT
-   (Cahaya dari belakang)   (Cahaya tepi)
-
-      👤                        ☀️
-       ↑                      ↗   ↖
-       │                    👤 (Glowing edge)
-       ☀️                   Dramatic!
-   Silhouette!
-`}
-              </pre>
-            </div>
-
-            <div className="example-box">
-              <h4>Kapan Pakai?</h4>
-              <ul>
-                <li>☀️→👤 <strong>Front:</strong> Product, flat lay, documentary</li>
-                <li>☀️→│👤 <strong>Side:</strong> Portrait dramatic, texture</li>
-                <li>👤←☀️ <strong>Back:</strong> Silhouette, artistic</li>
-                <li>☀️↗👤 <strong>Rim:</strong> Separation dari BG, glowing effect</li>
-              </ul>
+            <div className="lighting-directions">
+              <div className="direction-item">
+                <h4>☀️→👤 Front Light (Cahaya dari depan)</h4>
+                <p>Subjek fully lit, flat, no shadow</p>
+                <p><strong>Best untuk:</strong> Product, flat lay, documentary</p>
+              </div>
+              <div className="direction-item">
+                <h4>☀️→│👤 Side Light (Cahaya dari samping)</h4>
+                <p>Depth & texture menonjol, dramatic shadow</p>
+                <p><strong>Best untuk:</strong> Portrait dramatic, texture</p>
+              </div>
+              <div className="direction-item">
+                <h4>👤←☀️ Back Light (Cahaya dari belakang)</h4>
+                <p>Silhouette, dramatic, glowing edge</p>
+                <p><strong>Best untuk:</strong> Silhouette, artistic</p>
+              </div>
+              <div className="direction-item">
+                <h4>☀️↗👤 Rim Light (Cahaya tepi)</h4>
+                <p>Glowing outline, separation dari BG</p>
+                <p><strong>Best untuk:</strong> Separation, dramatic effect</p>
+              </div>
             </div>
           </div>
 
@@ -519,16 +430,6 @@ TIMELINE CAHAYA NATURAL:
             <div className="comparison-box">
               <div className="compare-item">
                 <h4>💎 Hard Light</h4>
-                <pre>
-{`
-    ☀️  (Small source)
-    │
-    │ Sharp
-    ↓
-   👤 ▓▓ (Keras)
-      ▓▓ Shadow
-`}
-                </pre>
                 <p><strong>Karakteristik:</strong></p>
                 <ul>
                   <li>Bayangan tajam & kontras tinggi</li>
@@ -540,16 +441,6 @@ TIMELINE CAHAYA NATURAL:
 
               <div className="compare-item">
                 <h4>☁️ Soft Light</h4>
-                <pre>
-{`
-  ☁️☁️☁️ (Large source)
-   │││
-   │││ Diffused
-   ↓↓↓
-   👤 ░░ (Lembut)
-      ░░ Shadow
-`}
-                </pre>
                 <p><strong>Karakteristik:</strong></p>
                 <ul>
                   <li>Bayangan lembut & gradual</li>
@@ -568,37 +459,22 @@ TIMELINE CAHAYA NATURAL:
           <div className="element-card">
             <h3>🎨 3-Point Lighting (Studio Setup)</h3>
 
-            <div className="studio-diagram">
-              <pre>
-{`
-              CAMERA
-                📷
-                │
-                │
-                ↓
-
-     💡 KEY        👤         💡 FILL
-    (Main)     (Subject)    (Fill shadow)
-
-                ↑
-                │
-               💡
-            BACK/RIM
-          (Separation)
-
-Setup klasik untuk portrait studio!
-`}
-              </pre>
+            <div className="studio-setup">
+              <div className="light-point">
+                <h4>💡 Key Light</h4>
+                <p>Cahaya utama, paling terang (45° dari subjek)</p>
+              </div>
+              <div className="light-point">
+                <h4>💡 Fill Light</h4>
+                <p>Isi bayangan yang terlalu gelap (opposite key)</p>
+              </div>
+              <div className="light-point">
+                <h4>💡 Back/Rim Light</h4>
+                <p>Separasi subjek dari background</p>
+              </div>
             </div>
 
-            <div className="info-box">
-              <h4>Fungsi Masing-masing:</h4>
-              <ul>
-                <li><strong>Key Light:</strong> Cahaya utama, paling terang (45° dari subjek)</li>
-                <li><strong>Fill Light:</strong> Isi bayangan yang terlalu gelap (opposite key)</li>
-                <li><strong>Back/Rim Light:</strong> Separasi subjek dari background</li>
-              </ul>
-            </div>
+            <p className="tip-text">Setup klasik untuk portrait studio profesional!</p>
           </div>
 
           <div className="practice-box">
@@ -628,35 +504,27 @@ Setup klasik untuk portrait studio!
             <h3>🎞️ Frame Rate (FPS)</h3>
             <p>Jumlah frame per detik yang direkam.</p>
 
-            <div className="fps-diagram">
-              <pre>
-{`
-24fps  ━━━━━━━━━━  CINEMATIC 🎬
-       Film look, theatrical
-
-30fps  ━━━━━━━━━━  STANDARD 📺
-       TV, YouTube, natural
-
-60fps  ━━━━━━━━━━  SMOOTH 🎮
-       Sports, slow-mo source
-
-120fps ━━━━━━━━━━  SLOW MOTION ⏱️
-       Super slow playback
-
-240fps ━━━━━━━━━━  ULTRA SLOW-MO 🐌
-       Ultra slow, professional
-`}
-              </pre>
-            </div>
-
-            <div className="info-box">
-              <h4>Kapan Pakai FPS Apa?</h4>
-              <ul>
-                <li><strong>24fps:</strong> Film, cinematic content, YouTube video</li>
-                <li><strong>30fps:</strong> Vlog, talking head, interview</li>
-                <li><strong>60fps:</strong> Gaming, sports, smooth action</li>
-                <li><strong>120fps+:</strong> Slow motion sequences</li>
-              </ul>
+            <div className="fps-guide">
+              <div className="fps-item">
+                <h4>24fps</h4>
+                <p><strong>Look:</strong> Cinematic 🎬</p>
+                <p><strong>Best untuk:</strong> Film, YouTube video cinematic</p>
+              </div>
+              <div className="fps-item">
+                <h4>30fps</h4>
+                <p><strong>Look:</strong> Standard 📺</p>
+                <p><strong>Best untuk:</strong> TV, vlog, talking head</p>
+              </div>
+              <div className="fps-item">
+                <h4>60fps</h4>
+                <p><strong>Look:</strong> Smooth 🎮</p>
+                <p><strong>Best untuk:</strong> Sports, gaming, action</p>
+              </div>
+              <div className="fps-item">
+                <h4>120fps+</h4>
+                <p><strong>Look:</strong> Slow Motion ⏱️</p>
+                <p><strong>Best untuk:</strong> Slow-mo sequences, dramatic effect</p>
+              </div>
             </div>
 
             <div className="tip-box">
@@ -667,26 +535,23 @@ Setup klasik untuk portrait studio!
           <div className="element-card">
             <h3>📐 Aspect Ratio & Resolution</h3>
 
-            <div className="ratio-visual">
-              <pre>
-{`
-16:9 (Landscape)        9:16 (Vertical)
-┌──────────────┐        ┌────┐
-│              │        │    │
-│   YouTube    │        │ IG │
-│   TV         │        │Tik │
-│              │        │Tok │
-└──────────────┘        │    │
-                        └────┘
-
-1:1 (Square)            21:9 (Ultra Wide)
-┌────────┐              ┌─────────────────┐
-│        │              │  Cinematic      │
-│  IG    │              └─────────────────┘
-│  Feed  │
-└────────┘
-`}
-              </pre>
+            <div className="ratio-guide">
+              <div className="ratio-item">
+                <h4>16:9 (Landscape)</h4>
+                <p>YouTube, TV, standard video</p>
+              </div>
+              <div className="ratio-item">
+                <h4>9:16 (Vertical)</h4>
+                <p>Instagram Reels, TikTok, Stories</p>
+              </div>
+              <div className="ratio-item">
+                <h4>1:1 (Square)</h4>
+                <p>Instagram Feed</p>
+              </div>
+              <div className="ratio-item">
+                <h4>21:9 (Ultra Wide)</h4>
+                <p>Cinematic, widescreen film</p>
+              </div>
             </div>
 
             <div className="comparison-box">
@@ -713,24 +578,31 @@ Setup klasik untuk portrait studio!
           <div className="element-card">
             <h3>🎬 Camera Movement</h3>
 
-            <div className="movement-visual">
-              <pre>
-{`
-PAN (Horizontal)     TILT (Vertical)
-📷 → → →            📷 ↑
-                       ↑
-
-DOLLY (In/Out)       TRUCK (Sideways)
-📷 ← → 👤           📷 ⇢ ⇢ ⇢
-   Zoom fisik        Parallel move
-
-
-CRANE (Up/Down)      TRACKING
-    ↑                📷→→→→👤
-    📷               Follow subjek
-    ↓
-`}
-              </pre>
+            <div className="movement-guide">
+              <div className="move-item">
+                <h4>↔️ PAN (Horizontal)</h4>
+                <p>Gerakan kamera horizontal, reveal scene</p>
+              </div>
+              <div className="move-item">
+                <h4>↕️ TILT (Vertical)</h4>
+                <p>Gerakan kamera vertikal, reveal height</p>
+              </div>
+              <div className="move-item">
+                <h4>⇄ DOLLY (In/Out)</h4>
+                <p>Gerakan maju/mundur, zoom fisik</p>
+              </div>
+              <div className="move-item">
+                <h4>⇢ TRUCK (Sideways)</h4>
+                <p>Gerakan parallel ke samping</p>
+              </div>
+              <div className="move-item">
+                <h4>↑↓ CRANE (Up/Down)</h4>
+                <p>Gerakan naik/turun vertikal</p>
+              </div>
+              <div className="move-item">
+                <h4>→→ TRACKING</h4>
+                <p>Follow subjek yang bergerak</p>
+              </div>
             </div>
 
             <div className="info-box">
@@ -747,25 +619,23 @@ CRANE (Up/Down)      TRACKING
           <div className="element-card">
             <h3>🎭 Shot Types</h3>
 
-            <div className="shot-visual">
-              <pre>
-{`
-WIDE SHOT (WS)       MEDIUM SHOT (MS)
-┌─────────────┐      ┌─────────────┐
-│   🏔️  🏡   │      │             │
-│     👤      │      │    👤       │
-│  Context    │      │   Waist up  │
-└─────────────┘      └─────────────┘
-
-
-CLOSE UP (CU)        EXTREME CU (ECU)
-┌─────────────┐      ┌─────────────┐
-│             │      │             │
-│    👁️👃👁️    │      │     👁️      │
-│    Emotion   │      │    Detail   │
-└─────────────┘      └─────────────┘
-`}
-              </pre>
+            <div className="shot-guide">
+              <div className="shot-item">
+                <h4>Wide Shot (WS)</h4>
+                <p>Full body + environment, establish context</p>
+              </div>
+              <div className="shot-item">
+                <h4>Medium Shot (MS)</h4>
+                <p>Waist up, dialog & interaction</p>
+              </div>
+              <div className="shot-item">
+                <h4>Close Up (CU)</h4>
+                <p>Face/object detail, emotion</p>
+              </div>
+              <div className="shot-item">
+                <h4>Extreme Close Up (ECU)</h4>
+                <p>Very tight detail, dramatic</p>
+              </div>
             </div>
 
             <div className="example-box">
@@ -783,12 +653,15 @@ CLOSE UP (CU)        EXTREME CU (ECU)
             <h3>📝 B-Roll</h3>
             <p><strong>B-Roll</strong> adalah footage pendukung yang di-overlay pada narasi utama.</p>
 
-            <div className="broll-example">
-              <h4>Contoh Penggunaan:</h4>
-              <div className="timeline-sim">
-                <p><strong>A-Roll (Main):</strong> "Hari ini saya ke pantai..."</p>
-                <p><strong>B-Roll:</strong> 🌊 (footage ombak) + 🏖️ (pasir) + 🌅 (sunset)</p>
-              </div>
+            <div className="concept-explain">
+              <h4>💡 Konsep:</h4>
+              <p>Saat A-roll (narasi utama) berbicara tentang sesuatu, B-roll menunjukkan visual dari apa yang dibicarakan untuk membuat video lebih engaging.</p>
+            </div>
+
+            <div className="example-box">
+              <h4>Contoh:</h4>
+              <p><strong>A-Roll:</strong> "Hari ini saya ke pantai..."</p>
+              <p><strong>B-Roll:</strong> 🌊 Footage ombak + 🏖️ Pasir + 🌅 Sunset</p>
             </div>
 
             <div className="tip-box">
@@ -822,37 +695,43 @@ CLOSE UP (CU)        EXTREME CU (ECU)
           <div className="element-card">
             <h3>📷 Jenis Kamera</h3>
 
-            <div className="comparison-box">
-              <div className="compare-item">
+            <div className="camera-types">
+              <div className="camera-item">
                 <h4>📱 Smartphone</h4>
                 <p><strong>Budget:</strong> Sudah punya</p>
-                <p className="pro">✅ Selalu dibawa</p>
-                <p className="pro">✅ Mudah dipakai</p>
-                <p className="pro">✅ Editing built-in</p>
-                <p className="con">❌ Limited control</p>
-                <p className="con">❌ Sensor kecil</p>
+                <div className="pros-cons">
+                  <p className="pro">✅ Selalu dibawa</p>
+                  <p className="pro">✅ Mudah dipakai</p>
+                  <p className="pro">✅ Editing built-in</p>
+                  <p className="con">❌ Limited control</p>
+                  <p className="con">❌ Sensor kecil</p>
+                </div>
                 <p><strong>Cocok:</strong> Pemula, casual, social media</p>
               </div>
 
-              <div className="compare-item">
+              <div className="camera-item">
                 <h4>📸 Mirrorless</h4>
                 <p><strong>Budget:</strong> 5-50 juta</p>
-                <p className="pro">✅ Compact & ringan</p>
-                <p className="pro">✅ Full manual control</p>
-                <p className="pro">✅ Video bagus</p>
-                <p className="pro">✅ Modern features</p>
-                <p className="con">❌ Baterai cepat habis</p>
+                <div className="pros-cons">
+                  <p className="pro">✅ Compact & ringan</p>
+                  <p className="pro">✅ Full manual control</p>
+                  <p className="pro">✅ Video bagus</p>
+                  <p className="pro">✅ Modern features</p>
+                  <p className="con">❌ Baterai cepat habis</p>
+                </div>
                 <p><strong>Cocok:</strong> Pemula-Pro, versatile</p>
               </div>
 
-              <div className="compare-item">
+              <div className="camera-item">
                 <h4>📷 DSLR</h4>
                 <p><strong>Budget:</strong> 4-40 juta</p>
-                <p className="pro">✅ Baterai tahan lama</p>
-                <p className="pro">✅ Optical viewfinder</p>
-                <p className="pro">✅ Lens banyak</p>
-                <p className="con">❌ Lebih berat</p>
-                <p className="con">❌ Video kurang optimal</p>
+                <div className="pros-cons">
+                  <p className="pro">✅ Baterai tahan lama</p>
+                  <p className="pro">✅ Optical viewfinder</p>
+                  <p className="pro">✅ Lens banyak</p>
+                  <p className="con">❌ Lebih berat</p>
+                  <p className="con">❌ Video kurang optimal</p>
+                </div>
                 <p><strong>Cocok:</strong> Foto-focused, traditional</p>
               </div>
             </div>
@@ -871,23 +750,7 @@ CLOSE UP (CU)        EXTREME CU (ECU)
             <h3>🔍 Lensa (Lens)</h3>
 
             <div className="lens-types">
-              <h4>Berdasarkan Focal Length:</h4>
-              <pre>
-{`
-WIDE ANGLE          NORMAL           TELEPHOTO
-10-35mm            35-70mm           70-300mm+
-┌─────────┐        ┌─────┐           ┌─┐
-│  🏔️🏡🌳  │        │ 👤  │           │👤│
-│  Lebar   │        │     │           │ │
-└─────────┘        └─────┘           └─┘
-Landscape          Portrait          Wildlife
-Architecture       Street            Sports
-`}
-              </pre>
-            </div>
-
-            <div className="comparison-box">
-              <div className="compare-item">
+              <div className="lens-item">
                 <h4>📏 Wide Angle (10-35mm)</h4>
                 <p><strong>Best untuk:</strong></p>
                 <ul>
@@ -896,10 +759,10 @@ Architecture       Street            Sports
                   <li>🏠 Interior</li>
                   <li>✨ Astrophotography</li>
                 </ul>
-                <p className="tip">💡 Perspective distortion - foreground terlihat besar</p>
+                <p className="tip-text">💡 Perspective distortion - foreground terlihat besar</p>
               </div>
 
-              <div className="compare-item">
+              <div className="lens-item">
                 <h4>📏 Normal (35-70mm)</h4>
                 <p><strong>Best untuk:</strong></p>
                 <ul>
@@ -908,10 +771,10 @@ Architecture       Street            Sports
                   <li>📸 General purpose</li>
                   <li>🎬 Videografi</li>
                 </ul>
-                <p className="tip">💡 Natural perspective seperti mata manusia</p>
+                <p className="tip-text">💡 Natural perspective seperti mata manusia</p>
               </div>
 
-              <div className="compare-item">
+              <div className="lens-item">
                 <h4>📏 Telephoto (70-300mm+)</h4>
                 <p><strong>Best untuk:</strong></p>
                 <ul>
@@ -920,7 +783,7 @@ Architecture       Street            Sports
                   <li>👤 Portrait (compression)</li>
                   <li>🌙 Moon photography</li>
                 </ul>
-                <p className="tip">💡 Compressed perspective - background terasa dekat</p>
+                <p className="tip-text">💡 Compressed perspective - background terasa dekat</p>
               </div>
             </div>
 
@@ -1043,7 +906,7 @@ Architecture       Street            Sports
           <div className="element-card">
             <h3>📸 Photo Editing Software</h3>
 
-            <div className="software-comparison">
+            <div className="software-list">
               <div className="soft-item">
                 <h4>🎨 Adobe Lightroom</h4>
                 <p><strong>Best untuk:</strong> Batch editing, RAW processing, color grading</p>
@@ -1089,7 +952,7 @@ Architecture       Street            Sports
           <div className="element-card">
             <h3>🎬 Video Editing Software</h3>
 
-            <div className="software-comparison">
+            <div className="software-list">
               <div className="soft-item">
                 <h4>🎥 Adobe Premiere Pro</h4>
                 <p><strong>Best untuk:</strong> Professional video editing</p>
@@ -1137,56 +1000,74 @@ Architecture       Street            Sports
 
             <div className="workflow-steps">
               <div className="workflow-step">
-                <h4>1️⃣ Import & Culling</h4>
-                <p>Import foto ke Lightroom, pilih foto terbaik (reject yang buruk)</p>
+                <span className="step-num">1</span>
+                <div className="step-content">
+                  <h4>Import & Culling</h4>
+                  <p>Import foto ke Lightroom, pilih foto terbaik (reject yang buruk)</p>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>2️⃣ Basic Adjustments</h4>
-                <ul>
-                  <li><strong>Exposure:</strong> Kecerahan keseluruhan</li>
-                  <li><strong>Contrast:</strong> Perbedaan terang-gelap</li>
-                  <li><strong>Highlights:</strong> Area terang</li>
-                  <li><strong>Shadows:</strong> Area gelap</li>
-                  <li><strong>Whites & Blacks:</strong> Pure white dan black point</li>
-                </ul>
+                <span className="step-num">2</span>
+                <div className="step-content">
+                  <h4>Basic Adjustments</h4>
+                  <ul>
+                    <li><strong>Exposure:</strong> Kecerahan keseluruhan</li>
+                    <li><strong>Contrast:</strong> Perbedaan terang-gelap</li>
+                    <li><strong>Highlights:</strong> Area terang</li>
+                    <li><strong>Shadows:</strong> Area gelap</li>
+                    <li><strong>Whites & Blacks:</strong> Pure white dan black point</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>3️⃣ Color Grading</h4>
-                <ul>
-                  <li><strong>White Balance:</strong> Suhu warna (warm/cool)</li>
-                  <li><strong>Vibrance:</strong> Intensitas warna (subtle)</li>
-                  <li><strong>Saturation:</strong> Intensitas warna (strong)</li>
-                  <li><strong>HSL:</strong> Adjust warna spesifik</li>
-                </ul>
+                <span className="step-num">3</span>
+                <div className="step-content">
+                  <h4>Color Grading</h4>
+                  <ul>
+                    <li><strong>White Balance:</strong> Suhu warna (warm/cool)</li>
+                    <li><strong>Vibrance:</strong> Intensitas warna (subtle)</li>
+                    <li><strong>Saturation:</strong> Intensitas warna (strong)</li>
+                    <li><strong>HSL:</strong> Adjust warna spesifik</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>4️⃣ Detail Enhancement</h4>
-                <ul>
-                  <li><strong>Sharpening:</strong> Ketajaman (jangan berlebihan!)</li>
-                  <li><strong>Noise Reduction:</strong> Hilangkan grain</li>
-                  <li><strong>Clarity:</strong> Midtone contrast</li>
-                </ul>
+                <span className="step-num">4</span>
+                <div className="step-content">
+                  <h4>Detail Enhancement</h4>
+                  <ul>
+                    <li><strong>Sharpening:</strong> Ketajaman (jangan berlebihan!)</li>
+                    <li><strong>Noise Reduction:</strong> Hilangkan grain</li>
+                    <li><strong>Clarity:</strong> Midtone contrast</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>5️⃣ Creative Touch</h4>
-                <ul>
-                  <li><strong>Vignette:</strong> Gelap di pinggir</li>
-                  <li><strong>Grain:</strong> Film look</li>
-                  <li><strong>Curves:</strong> Tone control</li>
-                </ul>
+                <span className="step-num">5</span>
+                <div className="step-content">
+                  <h4>Creative Touch</h4>
+                  <ul>
+                    <li><strong>Vignette:</strong> Gelap di pinggir</li>
+                    <li><strong>Grain:</strong> Film look</li>
+                    <li><strong>Curves:</strong> Tone control</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>6️⃣ Export</h4>
-                <ul>
-                  <li><strong>Web:</strong> JPEG, sRGB, 2000px long edge</li>
-                  <li><strong>Print:</strong> TIFF/PSD, Adobe RGB, 300dpi</li>
-                  <li><strong>Instagram:</strong> JPEG, sRGB, 1080x1080 or 1080x1350</li>
-                </ul>
+                <span className="step-num">6</span>
+                <div className="step-content">
+                  <h4>Export</h4>
+                  <ul>
+                    <li><strong>Web:</strong> JPEG, sRGB, 2000px long edge</li>
+                    <li><strong>Print:</strong> TIFF/PSD, Adobe RGB, 300dpi</li>
+                    <li><strong>Instagram:</strong> JPEG, sRGB, 1080x1080 or 1080x1350</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -1196,55 +1077,76 @@ Architecture       Street            Sports
 
             <div className="workflow-steps">
               <div className="workflow-step">
-                <h4>1️⃣ Import & Organize</h4>
-                <p>Import footage, organize di bins/folders, backup!</p>
+                <span className="step-num">1</span>
+                <div className="step-content">
+                  <h4>Import & Organize</h4>
+                  <p>Import footage, organize di bins/folders, backup!</p>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>2️⃣ Rough Cut</h4>
-                <p>Susun sequence, potong bagian tidak perlu, tentukan struktur cerita</p>
+                <span className="step-num">2</span>
+                <div className="step-content">
+                  <h4>Rough Cut</h4>
+                  <p>Susun sequence, potong bagian tidak perlu, tentukan struktur cerita</p>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>3️⃣ Fine Cut</h4>
-                <p>Timing precis, transisi, pacing, J-cuts & L-cuts</p>
+                <span className="step-num">3</span>
+                <div className="step-content">
+                  <h4>Fine Cut</h4>
+                  <p>Timing precis, transisi, pacing, J-cuts & L-cuts</p>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>4️⃣ Color Correction</h4>
-                <ul>
-                  <li>Fix exposure</li>
-                  <li>Match shots</li>
-                  <li>White balance</li>
-                </ul>
+                <span className="step-num">4</span>
+                <div className="step-content">
+                  <h4>Color Correction</h4>
+                  <ul>
+                    <li>Fix exposure</li>
+                    <li>Match shots</li>
+                    <li>White balance</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>5️⃣ Color Grading</h4>
-                <ul>
-                  <li>Apply LUTs</li>
-                  <li>Creative color</li>
-                  <li>Mood & tone</li>
-                </ul>
+                <span className="step-num">5</span>
+                <div className="step-content">
+                  <h4>Color Grading</h4>
+                  <ul>
+                    <li>Apply LUTs</li>
+                    <li>Creative color</li>
+                    <li>Mood & tone</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>6️⃣ Audio Mix</h4>
-                <ul>
-                  <li>Levels balance</li>
-                  <li>Music ducking</li>
-                  <li>Sound effects</li>
-                  <li>Noise reduction</li>
-                </ul>
+                <span className="step-num">6</span>
+                <div className="step-content">
+                  <h4>Audio Mix</h4>
+                  <ul>
+                    <li>Levels balance</li>
+                    <li>Music ducking</li>
+                    <li>Sound effects</li>
+                    <li>Noise reduction</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="workflow-step">
-                <h4>7️⃣ Export</h4>
-                <ul>
-                  <li><strong>YouTube:</strong> H.264, 1080p/4K, 20-40 Mbps</li>
-                  <li><strong>Instagram:</strong> H.264, 1080p, 15 Mbps</li>
-                  <li><strong>Archive:</strong> ProRes, original resolution</li>
-                </ul>
+                <span className="step-num">7</span>
+                <div className="step-content">
+                  <h4>Export</h4>
+                  <ul>
+                    <li><strong>YouTube:</strong> H.264, 1080p/4K, 20-40 Mbps</li>
+                    <li><strong>Instagram:</strong> H.264, 1080p, 15 Mbps</li>
+                    <li><strong>Archive:</strong> ProRes, original resolution</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
