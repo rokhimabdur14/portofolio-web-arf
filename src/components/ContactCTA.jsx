@@ -40,7 +40,7 @@ const ContactCTA = () => {
               whileTap={{ scale: 0.95 }}
             >
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6285876971629"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-btn-whatsapp"
@@ -69,11 +69,11 @@ const ContactCTA = () => {
           >
             <div className="contact-info-item">
               <Phone size={18} />
-              <span>+62 812-3456-7890</span>
+              <span>+62 858-7697-1629</span>
             </div>
             <div className="contact-info-item">
               <Mail size={18} />
-              <span>abdur@framevision.id</span>
+              <span>rokhimabdur14@gmail.com</span>
             </div>
             <div className="contact-info-item">
               <MapPin size={18} />

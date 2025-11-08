@@ -53,11 +53,11 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <Mail size={16} />
-                <span>abdur@framevision.id</span>
+                <span>rokhimabdur14@gmail.com</span>
               </li>
               <li>
                 <Phone size={16} />
-                <span>+62 812-3456-7890</span>
+                <span>+62 858-7697-1629</span>
               </li>
               <li>
                 <MapPin size={16} />
