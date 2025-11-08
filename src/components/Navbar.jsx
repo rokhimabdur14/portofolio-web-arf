@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -48,32 +51,36 @@ const Navbar = () => {
 
           <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
             <Link to="/" className={`nav-link ${isActive('/')}`} onClick={toggleMenu}>
-              Home
+              {t('nav.home')}
             </Link>
             <Link to="/portfolio" className={`nav-link ${isActive('/portfolio')}`} onClick={toggleMenu}>
-              Portofolio
+              {t('nav.portfolio')}
             </Link>
             <Link to="/about" className={`nav-link ${isActive('/about')}`} onClick={toggleMenu}>
-              About
+              {t('nav.about')}
             </Link>
             <Link to="/pricelist" className={`nav-link ${isActive('/pricelist')}`} onClick={toggleMenu}>
-              Price List
+              {t('nav.priceList')}
             </Link>
             <Link to="/belajar" className={`nav-link ${isActive('/belajar')}`} onClick={toggleMenu}>
-              Belajar
+              {t('nav.learn')}
             </Link>
             <Link to="/quiz" className={`nav-link ${isActive('/quiz')}`} onClick={toggleMenu}>
-              Quiz
+              {t('nav.quiz')}
             </Link>
             <Link to="/contact" className={`nav-link ${isActive('/contact')}`} onClick={toggleMenu}>
-              Contact
+              {t('nav.contact')}
             </Link>
           </div>
 
-          <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
+          {/* Language Switcher */}
+          <div className="nav-actions">
+            <LanguageSwitcher />
+            <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </motion.nav>

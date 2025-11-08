@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "priceList": "Price List",
+    "learn": "Learn",
+    "quiz": "Quiz",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Frame Vision",
+    "subtitle": "Abdur Rokhim Al Firdzos",
+    "tagline": "Freelance Photography & Videography | Based in IKN, Indonesia",
+    "ctaPortfolio": "View Portfolio",
+    "ctaContact": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Hello! I'm Abdur Rokhim Al Firdzos, a freelance photographer and videographer based in IKN, Indonesia. My passion is capturing precious moments and turning them into everlasting memories through the camera lens.",
+    "paragraph2": "With over 5 years of experience in the photography and videography industry, I have served hundreds of clients from various backgrounds. My expertise includes wedding photography, portrait sessions, commercial shoots, and cinematic videography.",
+    "paragraph3": "My philosophy is simple: every photo tells a story, and every story is valuable. I believe that the combination of professional technique, artistic creativity, and modern AI technology can produce extraordinary visual works.",
+    "stats": {
+      "years": "Years",
+      "projects": "Projects",
+      "clients": "Clients",
+      "awards": "Awards"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional solutions for all your photography and videography needs",
+    "photography": {
+      "title": "Photography",
+      "description": "Professional photography for events, portraits, and commercial projects with high-quality results.",
+      "includes": {
+        "title": "What's Included:",
+        "item1": "Event Photography",
+        "item2": "Portrait Sessions",
+        "item3": "Product Photography",
+        "item4": "Wedding Coverage"
+      },
+      "price": "$150"
+    },
+    "videography": {
+      "title": "Videography",
+      "description": "Cinematic videography and video production with engaging and professional storytelling.",
+      "includes": {
+        "title": "What's Included:",
+        "item1": "Cinematic Videos",
+        "item2": "Event Coverage",
+        "item3": "Corporate Videos",
+        "item4": "Music Videos"
+      },
+      "price": "$250"
+    },
+    "aiEnhancement": {
+      "title": "AI Enhancement",
+      "description": "Using the latest AI technology for outstanding photo and video enhancement.",
+      "includes": {
+        "title": "What's Included:",
+        "item1": "AI Color Grading",
+        "item2": "Smart Retouching",
+        "item3": "Resolution Upscaling",
+        "item4": "Background Enhancement"
+      },
+      "price": "$100"
+    },
+    "bookNow": "Book Now",
+    "startingFrom": "Starting from"
+  },
+  "portfolio": {
+    "title": "Portfolio Gallery",
+    "subtitle": "Explore our collection of stunning photography",
+    "categories": {
+      "all": "All",
+      "wedding": "Wedding",
+      "portrait": "Portrait",
+      "landscape": "Landscape",
+      "event": "Event",
+      "product": "Product"
+    }
+  },
+  "trust": {
+    "title": "Trusted by Hundreds of Clients",
+    "subtitle": "Our commitment to quality and client satisfaction is proven by these numbers",
+    "clientsTitle": "Some Clients Who Have Worked with Us:"
+  },
+  "testimonials": {
+    "title": "What They Say?",
+    "subtitle": "Client satisfaction is our top priority",
+    "reviews": [
+      {
+        "name": "Budi Santoso",
+        "occasion": "Wedding Photography",
+        "quote": "Abdur is very professional and his photos are amazing! Our wedding became so memorable thanks to his work."
+      },
+      {
+        "name": "Siti Nurhaliza",
+        "occasion": "Corporate Event",
+        "quote": "Top-notch videography quality! Our corporate event was documented perfectly and cinematically."
+      },
+      {
+        "name": "Ahmad Rahman",
+        "occasion": "Product Photography",
+        "quote": "The product photos produced are very high quality. Our product sales increased after using photos from Abdur."
+      },
+      {
+        "name": "Maya Putri",
+        "occasion": "Portrait Session",
+        "quote": "A fun portrait session! Abdur is very patient and knows how to make me comfortable in front of the camera."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Let's create something amazing together. Get in touch and let's discuss your vision!",
+    "getInTouch": "Get In Touch",
+    "whatsapp": "WhatsApp",
+    "viewPricing": "View Pricing",
+    "phone": "+62 812-3456-7890",
+    "email": "abdur@framevision.id",
+    "location": "IKN, Indonesia"
+  },
+  "footer": {
+    "tagline": "Capturing moments, creating memories. Professional photography & videography services in IKN, Indonesia.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us",
+    "copyright": "© {{year}} Frame Vision by Abdur Rokhim Al Firdzos. All rights reserved."
+  },
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  }
+}

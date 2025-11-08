@@ -2,9 +2,11 @@ import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './HeroSection.css';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -81,7 +83,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <h1 className="hero-title-new">Frame Vision</h1>
+            <h1 className="hero-title-new">{t('hero.title')}</h1>
           </motion.div>
 
           {/* Subtitle */}
@@ -90,7 +92,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <p className="hero-subtitle-new">Abdur Rokhim Al Firdzos</p>
+            <p className="hero-subtitle-new">{t('hero.subtitle')}</p>
           </motion.div>
 
           {/* Tagline */}
@@ -99,9 +101,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            <p className="hero-tagline-new">
-              Freelance Photography & Videography | Based in IKN, Indonesia
-            </p>
+            <p className="hero-tagline-new">{t('hero.tagline')}</p>
           </motion.div>
 
           {/* CTA Buttons with Stagger */}
@@ -116,7 +116,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Link to="/portfolio" className="cta-button-primary">
-                Lihat Portofolio
+                {t('hero.ctaPortfolio')}
               </Link>
             </motion.div>
 
@@ -125,7 +125,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Link to="/contact" className="cta-button-secondary">
-                Hubungi Saya
+                {t('hero.ctaContact')}
               </Link>
             </motion.div>
           </motion.div>

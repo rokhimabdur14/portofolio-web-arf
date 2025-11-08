@@ -46,6 +46,12 @@
   align-items: center;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-link {
   color: #fff;
   text-decoration: none;
