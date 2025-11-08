@@ -1,0 +1,224 @@
+.services-section-new {
+  padding: 120px 2rem;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 1rem;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #a0a0a0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.service-card-wrapper {
+  will-change: transform;
+  perspective: 1000px;
+}
+
+.service-card-new {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.service-card-new::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card-new:hover::before {
+  opacity: 1;
+}
+
+.service-card-new:hover {
+  border-color: rgba(78, 205, 196, 0.5);
+  box-shadow: 0 20px 60px rgba(78, 205, 196, 0.2);
+}
+
+/* Icon */
+.service-icon-new {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  border-radius: 20px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+/* Title */
+.service-title-new {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+
+/* Description */
+.service-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* What's Included */
+.service-includes {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service-includes h4 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.service-includes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-includes li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #c0c0c0;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.service-includes li svg {
+  color: #4ECDC4;
+  flex-shrink: 0;
+}
+
+/* Price */
+.service-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.price-label {
+  font-size: 0.85rem;
+  color: #909090;
+  margin-bottom: 0.25rem;
+}
+
+.price-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* CTA Button */
+.service-cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.service-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .services-section-new {
+    padding: 80px 1.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card-new {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Performance */
+.service-card-wrapper {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

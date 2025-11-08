@@ -1,5 +1,7 @@
-.home {
+.home-new {
   width: 100%;
+  background: #0a0a0a;
+  overflow-x: hidden;
 }
 
 /* Hero Section */
