@@ -29,7 +29,6 @@ const ServicesSection = () => {
         'Product Photography',
         'Wedding Coverage',
       ],
-      price: '$150',
     },
     {
       icon: <Video size={48} />,
@@ -42,7 +41,6 @@ const ServicesSection = () => {
         'Corporate Videos',
         'Music Videos',
       ],
-      price: '$250',
     },
     {
       icon: <Sparkles size={48} />,
@@ -55,7 +53,6 @@ const ServicesSection = () => {
         'Resolution Upscaling',
         'Background Enhancement',
       ],
-      price: '$100',
     },
   ];
 
@@ -130,15 +127,9 @@ const ServicesSection = () => {
                     </ul>
                   </div>
 
-                  {/* Price */}
-                  <div className="service-price">
-                    <span className="price-label">Starting from</span>
-                    <span className="price-value">{service.price}</span>
-                  </div>
-
                   {/* CTA Button */}
-                  <Link to="/contact" className="service-cta">
-                    Book Now
+                  <Link to="/price-list" className="service-cta">
+                    Lihat Harga
                   </Link>
                 </motion.div>
               </motion.div>

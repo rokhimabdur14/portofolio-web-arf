@@ -155,31 +155,6 @@
   flex-shrink: 0;
 }
 
-/* Price */
-.service-price {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.price-label {
-  font-size: 0.85rem;
-  color: #909090;
-  margin-bottom: 0.25rem;
-}
-
-.price-value {
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 /* CTA Button */
 .service-cta {
   display: inline-block;
